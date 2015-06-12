@@ -12,8 +12,27 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap-datepicker3
+ *= require font-awesome
  */
 
  div#task-form {
   display: none;
+}
+
+a:link {
+  color: black;
+}
+
+.well .task a:hover {
+  text-decoration: line-through;
+  color: red;
+}
+
+.fa-pencil {
+  margin-left: 2em;
+}
+
+.row {
+  margin-bottom: 3em;
 }
