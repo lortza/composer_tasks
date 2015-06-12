@@ -2,19 +2,26 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Composer Tasks" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Composer Tasks" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Task App via Rails Composer" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Task App via Rails Composer" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+
   <body>
     <header>
       <%= render 'layouts/navigation' %>
     </header>
+
     <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+      <div class="container-fluid">
+           <%= render 'layouts/messages' %>
+
+           <%= yield %>
+
+       </div><!--container-fluid-->
     </main>
+
   </body>
 </html>
