@@ -20,6 +20,10 @@ class UserTasksController < ApplicationController
     @user_task.update(user_task_params)
   end
 
+  def destroy
+    @user_task.destroy
+  end
+
   private
 
     def all_tasks
