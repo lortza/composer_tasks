@@ -1,15 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-
 <div class="row">
   <div class="col-sm-12">
-    <h1>Listing User Tasks</h1>
+    <h1>Tasks</h1>
+    <h2>Practice app built via rails composer and working via javascript</h2>
   </div><!--col-sm-12-->
 </div><!--row-->
 
 <div class="row">
   <div class="col-sm-4">
-        
+
       <%= link_to new_user_task_path, remote: true do %>
         <button class="btn btn-default add-task"><%= fa_icon "plus" %> Add Task</button>
       <% end %>
